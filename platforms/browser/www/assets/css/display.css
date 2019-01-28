@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
+    overflow-x: hidden;
+}
+
+.locationName{
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    padding: 15px;
+    font-size: 2.1em;
+}
+.mausam{
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: aliceblue;
+    top: 1.5em;
+    right: 50%;
+    margin-right: 50px;
+    font-size: 4.2em;
+}
+.windmill {
+    position: absolute;
+    left: 50%;
+    margin-top: 1.5em;
+    margin-left: 0px;
+}
+
+

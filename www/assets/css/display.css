@@ -1,9 +1,10 @@
 /*Fonts*/
-@font-face{
+@font-face {
     src: url(../font/Montserrat-Regular.ttf);
     font-family: Montserrat;
 }
-@font-face{
+
+@font-face {
     src: url(../font/OpenSans-Regular.ttf);
     font-family: Openssans;
 }
@@ -14,6 +15,7 @@
 
 html,
 body {
+    position: absolute;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -21,14 +23,28 @@ body {
     overflow-x: hidden;
 }
 
-.locationName{
-    position: absolute;
+header {
+    width: 100%;
+    display: block;
+    padding: 15px;
     font-family: Montserrat;
     color: #333;
-    padding: 15px;
     font-size: 2.1em;
 }
-.mausam{
+
+header .locationName {
+    float: left;
+}
+
+header .refreshB {
+    float: right;
+}
+
+main{
+    width: 100%;
+}
+
+.mausam {
     position: absolute;
     font-family: Openssans;
     text-align: center;
@@ -38,11 +54,10 @@ body {
     margin-right: 50px;
     font-size: 4.2em;
 }
+
 .windmill {
     position: absolute;
     left: 50%;
     margin-top: 1.5em;
     margin-left: 0px;
 }
-
-

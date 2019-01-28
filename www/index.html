@@ -18,6 +18,16 @@ width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <div class="locationName">
             <i class="fas fa-map-marker-alt"></i> Lethbridge
         </div>
+        <div class="refreshB">
+            <i class="fas fa-sync-alt" onclick="freshStart()"></i>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!--        grid system and flex box-->
+
         <div class="mausam">
             <i class="wi wi-snowflake-cold"></i><br><span id="temp"></span>&deg;C
         </div>
@@ -44,11 +54,13 @@ width=device-width, height=device-height, target-densitydpi=device-dpi" />
             <div class="cloud"></div>
             <div class="cloud cloud2"></div>
         </div>
-    </header>
-    <main>
-   
 
     </main>
+    <script>
+        function freshStart() {
+            window.location.reload();
+        }
+    </script>
     <script type="text/javascript" src="assets/js/weatherapp.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
 </body>

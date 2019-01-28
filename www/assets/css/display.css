@@ -1,5 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/*Fonts*/
+@font-face{
+    src: url(../font/Montserrat-Regular.ttf);
+    font-family: Montserrat;
+}
+@font-face{
+    src: url(../font/OpenSans-Regular.ttf);
+    font-family: Openssans;
+}
 
 * {
     box-sizing: border-box;
@@ -16,14 +23,14 @@ body {
 
 .locationName{
     position: absolute;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat;
     color: #333;
     padding: 15px;
     font-size: 2.1em;
 }
 .mausam{
     position: absolute;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Openssans;
     text-align: center;
     color: aliceblue;
     top: 1.5em;

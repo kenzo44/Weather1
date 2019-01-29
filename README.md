@@ -11,3 +11,5 @@ Single Screen Weather Application for NMED 3850
 * Min Temp (°C)
 * Wind (km/h)
 * Humidity (%)
+
+* Ability to refresh app while in it. Booyeah!

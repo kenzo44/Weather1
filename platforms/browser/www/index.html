@@ -2,8 +2,7 @@
 <html>
     <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,
-width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
     <title>Weather1 | NMED 3850</title>
 
     <link rel="stylesheet" type="text/css" href="assets/css/display.css">
@@ -11,7 +10,6 @@ width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <link rel="stylesheet" type="text/css" href="assets/css/weather-icons.min.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -19,37 +17,78 @@ width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <div class="locationName">
             <i class="fas fa-map-marker-alt"></i> Lethbridge
         </div>
-        <div class="mausam">
-            <i class="wi wi-snowflake-cold"></i><br><span id="temp"></span>&deg;C<br><span id="description"></span>
-        </div>
-        <div class="windmill">
-            <div class="wheel">
-                <div class="windwheel"></div>
-                <div class="windwheel windwheel2"></div>
-                <div class="windwheel windwheel3"></div>
-                <div class="windwheel windwheel4"></div>
-            </div>
-            <div class="roof"></div>
-            <div class="mill"></div>
-
-            <ul class="tree">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <ul class="bush">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <div class="cloud"></div>
-            <div class="cloud cloud2"></div>
+        <div class="refreshB">
+            <i class="fas fa-sync-alt" onclick="freshStart()"></i>
         </div>
     </header>
     <main>
-   
+        <div class="grid-parent">
 
+            <div class="grid-item item-1">
+                <div class="mausam">
+                    <i class="wi wi-snowflake-cold"></i><br><span id="temp"></span>&deg;C
+                </div>
+
+            </div>
+            <div class="grid-item item-2">
+                <!--Complete credit to https://codepen.io/eva_trostlos/pen/BQNwyP for the windmill-->
+                <div class="windmill">
+                    <div class="wheel">
+                        <div class="windwheel"></div>
+                        <div class="windwheel windwheel2"></div>
+                        <div class="windwheel windwheel3"></div>
+                        <div class="windwheel windwheel4"></div>
+                    </div>
+                    <div class="roof"></div>
+                    <div class="mill"></div>
+
+                    <ul class="tree">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class="bush">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="cloud"></div>
+                    <div class="cloud cloud2"></div>
+                </div>
+            </div>
+            <div class="grid-item item-3">
+                <div class="desc">
+                    <i class="fas fa-bullhorn"></i> <span id="description"></span>
+                </div>
+            </div>
+            <div class="mD">
+                <i class="fas fa-info-circle"></i> More Details
+            </div>
+            <div class="grid-item info-item item-4">
+                    <i class="fas fa-temperature-low"></i><br><span id="mintemp"></span>&deg;C
+            </div>
+
+            <div class="grid-item info-item item-5">
+                    <i class="fas fa-temperature-high"></i><br><span id="maxtemp"></span>&deg;C
+            </div>
+
+            <div class="grid-item info-item item-6">
+                    <i class="fas fa-wind"></i><br><span id="wind"></span> km/h
+            </div>
+
+            <div class="grid-item info-item item-7">
+                    <i class="wi wi-humidity"></i><br><span id="humidity"></span> %
+            </div>
+        </div>
     </main>
+    <footer>
+        <div class="me">Developed by Kenish Suri</div>
+    </footer>
+    <script>
+        function freshStart() {
+            window.location.reload();
+        }
+    </script>
     <script type="text/javascript" src="assets/js/weatherapp.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
 </body>

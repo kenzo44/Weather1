@@ -18,7 +18,7 @@
             <i class="fas fa-map-marker-alt"></i> Lethbridge
         </div>
         <div class="refreshB">
-            <i class="fas fa-sync-alt rB" onclick="freshStart()"></i>
+            <i class="fas fa-sync-alt" onclick="freshStart()"></i>
         </div>
     </header>
     <main>
@@ -31,6 +31,7 @@
 
             </div>
             <div class="grid-item item-2">
+                <!--Complete credit to https://codepen.io/eva_trostlos/pen/BQNwyP for the windmill-->
                 <div class="windmill">
                     <div class="wheel">
                         <div class="windwheel"></div>
@@ -55,16 +56,34 @@
                     <div class="cloud cloud2"></div>
                 </div>
             </div>
+            <div class="grid-item item-3">
+                <div class="desc">
+                    <i class="fas fa-bullhorn"></i> <span id="description"></span>
+                </div>
+            </div>
+            <div class="mD">
+                <i class="fas fa-info-circle"></i> More Details
+            </div>
+            <div class="grid-item info-item item-4">
+                    <i class="fas fa-temperature-low"></i><br><span id="mintemp"></span>&deg;C
+            </div>
 
+            <div class="grid-item info-item item-5">
+                    <i class="fas fa-temperature-high"></i><br><span id="maxtemp"></span>&deg;C
+            </div>
 
+            <div class="grid-item info-item item-6">
+                    <i class="fas fa-wind"></i><br><span id="wind"></span> km/h
+            </div>
 
-
-
-
-
+            <div class="grid-item info-item item-7">
+                    <i class="wi wi-humidity"></i><br><span id="humidity"></span> %
+            </div>
         </div>
-
     </main>
+    <footer>
+        <div class="me">Developed by Kenish Suri</div>
+    </footer>
     <script>
         function freshStart() {
             window.location.reload();

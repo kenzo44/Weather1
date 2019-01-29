@@ -2,8 +2,7 @@
 <html>
     <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,
-width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
     <title>Weather1 | NMED 3850</title>
 
     <link rel="stylesheet" type="text/css" href="assets/css/display.css">
@@ -19,53 +18,50 @@ width=device-width, height=device-height, target-densitydpi=device-dpi" />
             <i class="fas fa-map-marker-alt"></i> Lethbridge
         </div>
         <div class="refreshB">
-            <i class="fas fa-sync-alt" onclick="freshStart()"></i>
+            <i class="fas fa-sync-alt rB" onclick="freshStart()"></i>
         </div>
     </header>
-
-
     <main>
-
-        <!--        grid system and flex box-->
-        
-<!--        Might have to remove cloud and add to header, use win from codepen, grids fancy box for each reading text in the moddle below
-windmill and temp reading-->
-
-        
         <div class="grid-parent">
-            
-            
-            
-        <div class="mausam">
-            <i class="wi wi-snowflake-cold"></i><br><span id="temp"></span>&deg;C
-        </div>
-        <div class="windmill">
-            <div class="wheel">
-                <div class="windwheel"></div>
-                <div class="windwheel windwheel2"></div>
-                <div class="windwheel windwheel3"></div>
-                <div class="windwheel windwheel4"></div>
+
+            <div class="grid-item item-1">
+                <div class="mausam">
+                    <i class="wi wi-snowflake-cold"></i><br><span id="temp"></span>&deg;C
+                </div>
+
             </div>
-            <div class="roof"></div>
-            <div class="mill"></div>
+            <div class="grid-item item-2">
+                <div class="windmill">
+                    <div class="wheel">
+                        <div class="windwheel"></div>
+                        <div class="windwheel windwheel2"></div>
+                        <div class="windwheel windwheel3"></div>
+                        <div class="windwheel windwheel4"></div>
+                    </div>
+                    <div class="roof"></div>
+                    <div class="mill"></div>
 
-            <ul class="tree">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <ul class="bush">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <div class="cloud"></div>
-            <div class="cloud cloud2"></div>
-        </div>
+                    <ul class="tree">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class="bush">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="cloud"></div>
+                    <div class="cloud cloud2"></div>
+                </div>
+            </div>
 
-            
-            
-            
+
+
+
+
+
+
         </div>
 
     </main>

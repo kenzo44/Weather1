@@ -45,19 +45,31 @@ main{
 }
 
 .mausam {
-    position: absolute;
     font-family: Openssans;
-    text-align: center;
     color: aliceblue;
-    top: 1.5em;
-    right: 50%;
-    margin-right: 50px;
     font-size: 4.2em;
 }
 
 .windmill {
     position: absolute;
-    left: 50%;
-    margin-top: 1.5em;
-    margin-left: 0px;
+}
+
+.grid-parent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-item {
+    height: 100%;
+    text-align: center;
+}
+
+.item-1 {
+    margin-top: 2.8em;
+    grid-column: 1 / 2;
+}
+
+.item-2 {
+    grid-column: 2 / 3;
 }
